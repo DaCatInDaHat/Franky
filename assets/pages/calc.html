@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+    <title>Franky</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>Franky The CyberCat</h1>
+        </a>
+        <nav class="nav-menu">
+            <button id="nav-btn">menu</button>
+            <nav class="nav-list">
+                <a href="../../index.html">Home</a>
+                <a href="capitalize.html">Capitalize</a>
+                <a href="barge.html">Barge</a>
+                <a href="calc.html">Calculator</a>
+            </nav>
+        </nav>
+    </header>
+
+    <div class="card">
+        <div class="columns">
+            <div class="column-left">
+                <input type="number" id="calc-result" placeholder="result" disabled>
+                <div>
+                    <input type="number" id="first-number" placeholder="input number">
+                    <label for="operator">Operator:</label>
+                    <select name="operator" id="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="%">%</option>
+                        <option value="**">**</option>
+                    </select>
+                    <input type="number" id="second-number" placeholder="input number">
+                </div>
+                <button id="calculate-btn">Calculate</button>
+            </div>
+            <div class="column-right">
+                <img src="../img/cybercatface.jpg" alt="" />
+                <p>Calculator implementation example.</p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../js/calc.js"></script>
+</body>
+
+</html>

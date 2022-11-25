@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../style.css" />
+	<link rel="icon" href="../img/favicon.ico" />
+	<title>Franky</title>
+</head>
+
+<body>
+	<header>
+		<a href="index.html">
+			<h1>Franky The CyberCat</h1>
+		</a>
+		<nav class="nav-menu">
+			<button id="nav-btn">menu</button>
+			<nav class="nav-list">
+				<a href="../../index.html">Home</a>
+				<a href="capitalize.html">Capitalize</a>
+				<a href="barge.html">Barge</a>
+				<a href="calc.html">Calculator</a>
+			</nav>
+		</nav>
+	</header>
+
+	<div class="card">
+		<div class="columns">
+			<div class="column-left">
+				<div id="shipyard"></div>
+				<form id="info-panel">
+					<input type="text" id="stages" placeholder="levels" disabled />
+					<input type="text" id="load-count" placeholder="load count" disabled />
+				</form>
+				<form id="control-panel">
+					<button type="button" id="prepare" class="btns">Prepare a hold</button>
+					<button type="button" id="load" class="btns">Fill it</button>
+				</form>
+			</div>
+			<div class="column-right">
+				<img src="../img/cybercatface.jpg" alt="" />
+				<p>Click "Prepare a hold".</p>
+				<p>It will generate random array and will draw a hold.</p>
+				<p>Then click "Fill it".</p>
+				<p>It will fill holes for maximum.</p>
+				<p>To prepare new hold just refresh the page.</p>
+			</div>
+		</div>
+	</div>
+	<script type="module" src="../js/barge.js"></script>
+</body>
+
+</html>
