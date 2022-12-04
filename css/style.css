@@ -5,7 +5,7 @@
 body {
 	width: 1200px;
 	margin: auto;
-	background-image: url("/assets/img/coffee.jpg");
+	background-image: url("../img/coffee.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -48,11 +48,6 @@ button:hover {
 
 button:active {
 	transform: translateY(2px);
-}
-
-.nav-menu {
-	position: relative;
-	display: inline-block;
 }
 
 #nav-btn {
@@ -137,4 +132,46 @@ button:active {
 	width: 0.7cm;
 	height: 0.7cm;
 	border: solid;
+}
+
+#fin-control-panel {
+	display: flex;
+	flex-direction: column;
+}
+
+#fin-log {
+	height: 250px;
+	width: 500px;
+	border: solid;
+	overflow-y: scroll;
+}
+
+#fin-log ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+#fin-log li {
+	margin: 5px;
+	border-bottom: dashed;
+}
+
+#fin-log li h4 {
+	text-transform: capitalize;
+}
+
+#gallery {
+	width: 520px;
+	height: 420px;
+}
+
+#gallery img {
+	max-width: 500px;
+	max-height: 400px;
+	display: none;
+	box-shadow: var(--box-shadow);
+}
+
+#gallery img:first-child {
+	display: block;
 }

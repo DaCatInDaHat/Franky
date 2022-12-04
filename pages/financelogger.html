@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="../img/favicon.ico" />
     <title>Franky</title>
 </head>
@@ -18,10 +18,12 @@
         <nav class="nav-menu">
             <button id="nav-btn">menu</button>
             <nav class="nav-list">
-                <a href="../../index.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="capitalize.html">Capitalize</a>
                 <a href="barge.html">Barge</a>
                 <a href="calc.html">Calculator</a>
+                <a href="slider.html">Slider</a>
+                <a href="financelogger.html">Finance Logger</a>
             </nav>
         </nav>
     </header>
@@ -29,29 +31,28 @@
     <div class="card">
         <div class="columns">
             <div class="column-left">
-                <input type="number" id="calc-result" placeholder="result" disabled>
-                <div>
-                    <input type="number" id="first-number" placeholder="input number">
-                    <label for="operator">Operator:</label>
-                    <select name="operator" id="operator">
-                        <option value="+">+</option>
-                        <option value="-">-</option>
-                        <option value="*">*</option>
-                        <option value="/">/</option>
-                        <option value="%">%</option>
-                        <option value="**">**</option>
+                <div id="fin-control-panel">
+                    <label>Type:</label>
+                    <select id="fin-type">
+                        <option value="invoice">Invoice</option>
+                        <option value="payment">Payment</option>
                     </select>
-                    <input type="number" id="second-number" placeholder="input number">
+                    <input type="text" id="fin-tofrom" placeholder="To / From">
+                    <input type="text" id="fin-details" placeholder="Details:">
+                    <input type="number" id="fin-amount" placeholder="Amount:">
+                    <button id="fin-add">Add</button>
                 </div>
-                <button id="calculate-btn">Calculate</button>
+                <div id="fin-log">
+                    <ul></ul>
+                </div>
             </div>
             <div class="column-right">
                 <img src="../img/cybercatface.jpg" alt="" />
-                <p>Calculator implementation example.</p>
+                <p>Finance logger made with TypeScript.</p>
             </div>
         </div>
     </div>
-    <script type="module" src="../js/calc.js"></script>
+    <script type="module" src="../tsjs/financelogger.js"></script>
 </body>
 
 </html>
